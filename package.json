@@ -7,7 +7,8 @@
     "dev": "concurrently -k \"npm:dev:server\" \"npm:dev:admin\"",
     "dev:server": "node --watch server/index.js",
     "dev:admin": "vite --config vite.admin.config.ts",
-    "build": "npm run build:admin && npm run build:widget",
+    "build": "echo \"Static frontend deployment: no build required\"",
+    "build:all": "npm run build:admin && npm run build:widget",
     "build:admin": "vite build --config vite.admin.config.ts",
     "build:widget": "vite build --config vite.widget.config.ts",
     "start": "node server/index.js"
