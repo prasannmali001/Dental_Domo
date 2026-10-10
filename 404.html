@@ -1,32 +1,132 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><title>Page not found | Westside Dentist</title>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
-<link href="assets/img/favicon.svg" rel="shortcut icon" type="image/svg+xml"/>
-<style>body{margin:0;height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#fafafa;color:#011f23;font-family:Sora,Arial,sans-serif;text-align:center;padding:24px}
-h1{font-size:clamp(64px,12vw,140px);margin:0;letter-spacing:-3px}p{color:#5d6c7b;font-size:18px;margin:8px 0 28px}
-a{display:inline-flex;align-items:center;gap:8px;background:#011f23;color:#fff;text-decoration:none;padding:14px 26px;border-radius:999px;font-weight:500}</style>
-  <link rel="stylesheet" href="assets/js/mola-dental.css?v=20260917">
-</head><body><h1>404</h1><p>We couldn't find that page.</p><a href="index.html">Back to home</a>
-<script>
-/* Mola image guard: any failed/empty image -> on-brand gradient SVG so nothing ever looks broken. */
-(function(){
-  function ph(label){
-    var t=(label||'Westside Dentist').replace(/[<>&]/g,'').slice(0,22);
-    var svg='<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">'
-     +'<defs><linearGradient id="lg" x1="0" y1="0" x2="1280" y2="720" gradientUnits="userSpaceOnUse">'
-     +'<stop offset="0" stop-color="#24a3b1"/><stop offset="1" stop-color="#011f23"/></linearGradient></defs>'
-     +'<rect width="1280" height="720" fill="url(#lg)"/>'
-     +'<circle cx="640" cy="298" r="44" fill="#fff" opacity="0.9"/>'
-     +'<text x="640" y="436" fill="#fff" font-family="Sora,Arial" font-size="40" font-weight="600" text-anchor="middle" opacity="0.92">'+t+'</text></svg>';
-    return 'data:image/svg+xml;utf8,'+encodeURIComponent(svg);
-  }
-  function bind(im){
-    im.addEventListener('error',function(){ if(im.dataset.fbk)return; im.dataset.fbk='1'; im.src=ph(im.alt); });
-    if(im.complete && im.naturalWidth===0 && !im.dataset.fbk){ im.dataset.fbk='1'; im.src=ph(im.alt); }
-  }
-  document.querySelectorAll('img').forEach(bind);
-})();
-</script>
-<script src="assets/js/backend-url.js?v=20260918"></script>
-<script src="assets/js/mola-widget.js?v=20260918" defer></script>
-</body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Page Not Found | Lumora Dental Studio</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="assets/img/favicon.svg" rel="shortcut icon" type="image/svg+xml"/>
+  <link rel="stylesheet" href="assets/css/lumora-luxury.css">
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: #FAF8F5;
+      color: #161D1A;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      text-align: center;
+      padding: 32px 24px;
+      box-sizing: border-box;
+    }
+    .brand-mark {
+      margin-bottom: 24px;
+    }
+    h1 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(80px, 14vw, 150px);
+      font-weight: 500;
+      color: #143D30;
+      margin: 0;
+      line-height: 0.9;
+      letter-spacing: -2px;
+    }
+    .subtitle {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(24px, 4vw, 36px);
+      color: #161D1A;
+      margin: 16px 0 12px;
+      font-weight: 500;
+    }
+    p {
+      color: #5A6961;
+      font-size: 16px;
+      max-width: 440px;
+      margin: 0 0 36px;
+      line-height: 1.6;
+    }
+    .cta-row {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .btn-lumora {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #143D30;
+      color: #FAF8F5;
+      text-decoration: none;
+      padding: 14px 32px;
+      border-radius: 999px;
+      font-weight: 500;
+      font-size: 15px;
+      letter-spacing: 0.02em;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 24px rgba(20, 61, 48, 0.18);
+    }
+    .btn-lumora:hover {
+      background: #0d281f;
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(20, 61, 48, 0.25);
+      color: #FAF8F5;
+    }
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(20, 61, 48, 0.06);
+      color: #143D30;
+      text-decoration: none;
+      padding: 14px 28px;
+      border-radius: 999px;
+      font-weight: 500;
+      font-size: 15px;
+      border: 1px solid rgba(20, 61, 48, 0.15);
+      transition: all 0.3s ease;
+    }
+    .btn-secondary:hover {
+      background: rgba(20, 61, 48, 0.12);
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+  <div class="brand-mark">
+    <a href="index.html">
+      <img src="assets/img/lumora-logo.svg" alt="Lumora Dental Studio" height="38"/>
+    </a>
+  </div>
+  <h1>404</h1>
+  <div class="subtitle">Quiet Sanctuary, Page Not Found</div>
+  <p>The page you are looking for has moved or is undergoing aesthetic refinement. Allow us to guide you back to our studio.</p>
+  <div class="cta-row">
+    <a href="index.html" class="btn-lumora">&larr; Return to Studio</a>
+    <a href="service.html" class="btn-secondary">Explore Treatments</a>
+  </div>
+  <script>
+  (function(){
+    function ph(label){
+      var t=(label||'Lumora Dental Studio').replace(/[<>&]/g,'').slice(0,24);
+      var svg='<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">'
+       +'<defs><linearGradient id="lg" x1="0" y1="0" x2="1280" y2="720" gradientUnits="userSpaceOnUse">'
+       +'<stop offset="0" stop-color="#143D30"/><stop offset="1" stop-color="#0a221b"/></linearGradient></defs>'
+       +'<rect width="1280" height="720" fill="url(#lg)"/>'
+       +'<circle cx="640" cy="300" r="44" fill="#C5A880" opacity="0.9"/>'
+       +'<text x="640" y="440" fill="#FAF8F5" font-family="Georgia,serif" font-size="38" font-weight="500" text-anchor="middle" opacity="0.92">'+t+'</text></svg>';
+      return 'data:image/svg+xml;utf8,'+encodeURIComponent(svg);
+    }
+    document.querySelectorAll('img').forEach(function(im){
+      im.addEventListener('error',function(){ if(im.dataset.fbk)return; im.dataset.fbk='1'; im.src=ph(im.alt); });
+      if(im.complete && im.naturalWidth===0 && !im.dataset.fbk){ im.dataset.fbk='1'; im.src=ph(im.alt); }
+    });
+  })();
+  </script>
+</body>
+</html>
