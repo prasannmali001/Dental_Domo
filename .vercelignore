@@ -4,7 +4,6 @@
 Dockerfile
 render.yaml
 server/
-src/
 data/
 *.log
 screenshot-*.png
@@ -13,5 +12,3 @@ GOOGLE_FLOW_PROMPTS.md
 ONESHOT_PROMPT.md
 ONESHOT_WESTSIDE_PLATFORM.md
 TEMPLATE_TO_YOURS_PLAYBOOK.md
-vite.*.config.ts
-tsconfig.json
