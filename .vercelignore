@@ -1,0 +1,17 @@
+.git
+.github
+.dockerignore
+Dockerfile
+render.yaml
+server/
+src/
+data/
+*.log
+screenshot-*.png
+CLAUDE.md
+GOOGLE_FLOW_PROMPTS.md
+ONESHOT_PROMPT.md
+ONESHOT_WESTSIDE_PLATFORM.md
+TEMPLATE_TO_YOURS_PLAYBOOK.md
+vite.*.config.ts
+tsconfig.json
