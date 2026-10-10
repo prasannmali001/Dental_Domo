@@ -929,3 +929,68 @@ h3 {
     gap: 12px;
   }
 }
+
+/* Mobile Button & CTA Refinements */
+.hero-ctas-group {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: center !important;
+  gap: 14px !important;
+  margin-bottom: 24px !important;
+}
+
+@media (max-width: 540px) {
+  .hero-ctas-group {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    width: 100% !important;
+    gap: 12px !important;
+  }
+  .hero-ctas-group .button-container {
+    display: block !important;
+    width: 100% !important;
+    margin-right: 0 !important;
+  }
+  .hero-ctas-group .button_primary {
+    display: flex !important;
+    width: 100% !important;
+    justify-content: center !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+  }
+  .hero-text-split {
+    font-size: clamp(30px, 8vw, 42px) !important;
+    line-height: 1.15 !important;
+  }
+}
+
+/* Universal Text & SplitText Overflow Fix */
+h1, h2, h3, .heading, .hero-text-split, [hero-text-split], .split-line, .split-word, .split-char {
+  overflow: visible !important;
+  line-height: 1.25 !important;
+}
+
+.service-hero_content, .about-hero_content, .home-hero_content {
+  overflow: visible !important;
+}
+
+/* Mobile Navbar Toggle Icon */
+@media (max-width: 991px) {
+  .navbar-toggler-button.w-nav-button {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 42px !important;
+    height: 42px !important;
+    background: rgba(20, 61, 48, 0.06) !important;
+    border-radius: 8px !important;
+    cursor: pointer !important;
+  }
+  .navbar-toggler_bar_top,
+  .navbar-toggler_bar-middle,
+  .navbar_toggler-bar-bottom {
+    background-color: var(--lumora-green-900) !important;
+  }
+}
+
